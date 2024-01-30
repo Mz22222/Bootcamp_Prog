@@ -1,0 +1,226 @@
+# Следующая команда работает для загрузки при использовании Git для Windows:
+# curl -LOf http://gist.githubusercontent.com/kmorcinek/2710267/raw/.gitignore
+#
+# Загрузите этот файл с помощью PowerShell v3 под Windows со следующей командой:
+# Invoke-WebRequest https://gist.githubusercontent.com/kmorcinek/2710267/raw / -OutFile .gitignore
+#
+# или wget:
+# wget --сертификат без проверки http://gist.githubusercontent.com/kmorcinek/2710267/raw/.gitignore
+
+# Пользовательские файлы
+*.suo
+*.user
+*.sln.docstates
+
+# Результаты сборки
+[Dd]ebug/
+[Rr]elease/
+x64/
+[Bb]в/
+[Oo]bj/
+# папка сборки в настоящее время используется для сценариев сборки, и ее не следует игнорировать
+#сборка/
+
+# Пакеты NuGet
+*.nupkg
+# Папка packages может быть проигнорирована из-за восстановления пакета
+**/пакеты/*
+# за исключением build /, который используется в качестве целевого объекта MSBuild.
+**!/пакеты/сборка/
+# Раскомментируйте при необходимости, однако, как правило, он будет восстановлен при необходимости
+#!**/пакеты/репозитории.config
+
+# Результаты теста MSTest
+[Tt]есть[Rr]результат*/
+[Bb]uild[Ll]og.*
+
+*_i.c
+*_p.c
+*.ilk
+*.meta
+*.obj
+*.pch
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*.log
+*.vspscc
+*.vssscc
+.сборки
+*.pidb
+*.scc
+
+# Файлы кэша Visual C ++
+ipch/
+*.aps
+*.ncb
+*.opensdf
+*.sdf
+*.кэш-файл
+
+# Профилировщик Visual Studio
+*.psess
+*.vsp
+*.vspx
+
+# Инструментарий автоматизации руководства
+*.gpState
+
+# ReSharper - это надстройка для программирования в .NET
+*_ReSharper/
+.*[Rr]e[Ss]харпер
+
+# TeamCity - это надстройка для сборки
+_TeamCity*
+
+# dotCover - это инструмент для покрытия кода
+*.dotCover
+
+# NCrunch
+*.ncrunch*
+.*crunch*.local.xml
+
+# Выходная папка Installshield
+[Ee]xpress/
+
+# DocProject - это надстройка для генератора документации
+DocProject/buildhelp/
+DocProject/Справка/*.HxT
+DocProject/Справка/*.HxC
+DocProject/Справка/*.hhc
+DocProject/Справка/*.hhk
+DocProject/Справка/*.hhp
+DocProject/Справка/Html2
+DocProject/Справка/html
+
+# Каталог с одним щелчком мыши
+опубликовать/
+
+# Публикация веб-результатов
+*.Publish.xml
+
+# Выходные данные сборки Windows Azure
+csx
+*.build.csdef
+
+# Каталог пакетов приложений магазина Windows Store
+Пакеты приложений/
+
+# Другие
+*.Cache
+ClientBin/
+[Ss]тип[Cc]op.*
+~$*
+*~
+*.dbmdl
+.*[Pp]ublish.xml
+*.pfx
+*.publishsettings
+modulesbin/
+tempbin/
+
+# Файл сайта EPiServer (VPP)
+AppData/
+
+# RIA/Silverlight projects
+Сгенерированный код/
+
+# Резервное копирование файлов и создание отчетов в результате преобразования старого файла проекта в более новый
+# Версия Visual Studio. Резервные копии файлов не нужны, потому что у нас есть git ;-)
+_переход_файлов/
+*Резервное копирование/
+Журнал обновления*.XML
+Список обновлений*.htm
+
+# vim
+*.txt~
+*.swp
+*.swo
+
+# Временные файлы при открытии LibreOffice в ubuntu
+.~lock.*
+ 
+# svn
+.svn
+
+# CVS - система управления версиями
+**/CVS/
+
+# Остатки от разрешения конфликтов в системе управления версиями
+*.origin
+
+# Файлы SQL Server
+**/App_Data/*.mdf
+**/App_Data/*.ldf
+**/App_Data/*.sdf
+
+
+# Файлы, сгенерированные LightSwitch
+Созданные статьи/
+_Pvt_Extensions/
+ModelManifest.xml
+
+# =========================
+# Осколки Windows
+# =========================
+
+# Кэширование файлов образов Windows
+Thumbs.db
+ehthumbs.db
+
+Файл конфигурации папки#
+Desktop.ini
+
+# Корзина, используемая в общих файловых ресурсах
+$RECYCLE.BIN/
+
+# Файлы, созданные операционной системой #
+Значок?
+
+# Служба хранения файлов для настольных компьютеров Mac
+.DS_Store
+
+# Кэш компилятора SASS
+.sass-кэш
+
+# CTP Visual Studio 2014
+**/*.sln.ide
+
+# Что-то временное в Visual Studio
+.vs/
+
+# материал для dotnet
+project.lock.json
+
+# ПО СРАВНЕНИЮ с 2015 годом+
+*.vc.vc.opendb
+*.vc.db
+
+# Rider
+.идея/
+
+# Код Visual Studio
+.vscode/
+
+# Папка вывода, используемая Webpack или другими FE-материалами
+**/node_modules/*
+**/wwwroot/*
+
+# Специфичный для SpecFlow
+*.feature.cs
+*.feature.xlsx.*
+*.Specs_*.html
+
+# Проекты UWP
+Пакеты приложений/
+
+#####
+# В конце основного списка игнорирования, ниже приведены пользовательские настройки "для каждого проекта" (шаблоны или путь)
+#####
